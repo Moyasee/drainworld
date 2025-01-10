@@ -1,0 +1,46 @@
+/* Glassmorphism effect */
+.glass {
+    background: rgba(26, 26, 26, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hover animations */
+.hover-glow {
+    transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+    text-shadow: 0 0 10px var(--color-accent-green);
+    color: var(--color-accent-green);
+}
+
+/* VHS effect */
+.vhs-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.vhs-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        transparent 0%,
+        rgba(142, 202, 230, 0.1) 2%,
+        transparent 3%
+    );
+    animation: vhs-scan 8s linear infinite;
+}
+
+@keyframes vhs-scan {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+} 

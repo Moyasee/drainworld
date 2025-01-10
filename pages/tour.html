@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drain Gang - Tour</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav glass">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="tour.html">Tour</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="tour-container">
+        <h1 class="page-title vhs-effect">Tour Dates</h1>
+        
+        <div class="upcoming-shows">
+            <h2>Upcoming Shows</h2>
+            <div class="tour-dates">
+                <div class="tour-date-card glass hover-glow">
+                    <div class="date">
+                        <span class="day">24</span>
+                        <span class="month">JAN</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Montreal, QC, Canada</h3>
+                        <p>IGLOOFEST MTL #4</p>
+                        <p class="lineup">Featuring: Bladee, DOSS, COUCOU CHLOE (DJ set)</p>
+                        <button class="ticket-btn">Get Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="past-shows">
+            <h2>Recent Shows</h2>
+            <div class="tour-dates">
+                <div class="tour-date-card glass">
+                    <div class="date">
+                        <span class="day">17</span>
+                        <span class="month">DEC</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>London, UK</h3>
+                        <p>O2 Academy Brixton</p>
+                        <p class="past-show-label">Past Show</p>
+                    </div>
+                </div>
+                <div class="tour-date-card glass">
+                    <div class="date">
+                        <span class="day">16</span>
+                        <span class="month">DEC</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Manchester, UK</h3>
+                        <p>O2 Ritz Manchester</p>
+                        <p class="past-show-label">Past Show</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tour-stats glass">
+            <h2>Tour Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>Most Played Cities</h3>
+                    <ul>
+                        <li>Manchester (7 shows)</li>
+                        <li>London (7 shows)</li>
+                        <li>Los Angeles (6 shows)</li>
+                        <li>New York (5 shows)</li>
+                        <li>Stockholm (3 shows)</li>
+                    </ul>
+                </div>
+                <div class="stat-item">
+                    <h3>Total Distance Travelled</h3>
+                    <p>117,643 miles</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tour-map">
+            <h2>Tour Locations</h2>
+            <div id="map" class="glass">
+                <!-- Map will be embedded here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="../js/tour-map.js"></script>
+</body>
+</html> 
